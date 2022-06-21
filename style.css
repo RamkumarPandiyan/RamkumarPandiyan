@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  position: relative;
+  background-color:  #c68c53a8;
+  font-family: 'Architects Daughter', cursive;
+}
+
+button{
+  padding: 8px;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 30px;
+  background: whitesmoke;
+  border: 1px solid lightgray;
+}
+
+button:hover{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container{
+  width: 1280px;
+  margin: auto;
+}
+
+.nav{
+  color: white;
+  padding: 0 20px;
+  min-height: 70px;
+  text-shadow: 1px 1px black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.createBox{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.innerCreateBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.innerCreateBox textarea{
+  width: 276px;
+  height: 276px;
+  padding: 25px;
+  outline: none;
+  resize: none;
+  font-family: inherit;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+}
+
+.innerCreateBox i{
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  margin-top: -305px;
+  margin-left: 2px;
+}
+
+.notes{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.note{
+  width:300px;
+  height:305px;
+  transition: 2s;
+  overflow-wrap: break-word;
+  box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.75);
+}
+
+.note h1{
+  font-size: 1.5rem;
+}
+
+.details {
+  margin-top: 25px;
+  padding: 0 15px;
+  font-size: 1.5rem;
+}
+
+.details i{
+  color: whitesmoke;
+  cursor: pointer;
+  text-shadow: 1px 1px #BBB;
+}
+
+@media(max-width:1280px){
+  .container{
+    width: 95%;
+  }
+}
+
+@media(max-width:768px){
+  .nav{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media(max-width:480px){
+  .innerCreateBox{
+    width: 95%;
+    margin: auto;
+  }
+}
